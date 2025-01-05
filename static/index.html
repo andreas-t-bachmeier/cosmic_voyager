@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Voyager</title>
+    <link rel="stylesheet" href="CosmicVoyage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="scoreContainer">
+            <span id="score">0</span>
+        </div>
+        <div id="highScore">Player High Score: 0 km</div>
+        <div id="aiHighScore">AI High Score: 0 km</div> <!-- New AI High Score element -->
+
+        <div id="gameArea">
+            <div id="astronaut"></div>
+            <div id="gameTitle">Cosmic Voyager</div>
+            <!-- Obstacles will be added here by JS -->
+        </div>
+        <div id="gameOverScreen" class="hidden">
+            <p id="finalScore"></p>
+        </div>
+        <div id="instructionText"></div>
+
+        <!-- Container for start buttons -->
+        <div id="buttonContainer">
+            <button id="startButton">You Play</button>
+            <button id="aiButton">Use AI</button> <!-- New AI Button -->
+        </div>
+    </div>
+    
+    <script src="CosmicVoyage.js"></script>
+</body>
+</html>
